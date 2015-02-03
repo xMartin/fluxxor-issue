@@ -1,0 +1,21 @@
+{
+  "name": "fluxxor-issue",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "fluxxor": "^1.5.0",
+    "react": "^0.12.2"
+  },
+  "devDependencies": {
+    "jest-cli": "^0.2.2",
+    "react-tools": "^0.12.2"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  }
+}
